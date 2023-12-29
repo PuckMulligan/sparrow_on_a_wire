@@ -1,0 +1,6 @@
+[gd_scene format=2]
+
+[node name="InputHistory" type="Label"]
+margin_right = 970.0
+margin_bottom = 14.0
+text = " > This is what the user typed."
