@@ -1,8 +1,8 @@
 [gd_scene load_steps=2 format=2]
 
-[ext_resource path="res://Room.gd" type="Script" id=1]
+[ext_resource path="res://servers/Server.gd" type="Script" id=1]
 
-[node name="Room" type="PanelContainer"]
+[node name="Server" type="PanelContainer"]
 anchor_top = 0.5
 anchor_right = 4.648
 anchor_bottom = 3.695
@@ -20,18 +20,18 @@ margin_right = 4753.0
 margin_bottom = 2210.0
 
 [node name="Rows" type="VBoxContainer" parent="MarginContainer"]
-margin_right = 4746.0
+margin_right = 4745.0
 margin_bottom = 2203.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 
-[node name="RoomName" type="Label" parent="MarginContainer/Rows"]
-margin_right = 4746.0
+[node name="ServerName" type="Label" parent="MarginContainer/Rows"]
+margin_right = 4745.0
 margin_bottom = 14.0
 
-[node name="RoomDescription" type="Label" parent="MarginContainer/Rows"]
+[node name="ServerDescription" type="Label" parent="MarginContainer/Rows"]
 margin_top = 18.0
-margin_right = 4746.0
+margin_right = 4745.0
 margin_bottom = 2203.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
