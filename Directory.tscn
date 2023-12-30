@@ -1,0 +1,7 @@
+[gd_scene format=2]
+
+[node name="Directory" type="PanelContainer"]
+margin_left = 7.0
+margin_top = 7.0
+margin_right = 4738.0
+margin_bottom = 21.0

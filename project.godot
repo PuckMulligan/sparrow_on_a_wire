@@ -14,20 +14,44 @@ _global_script_classes=[ {
 "language": "GDScript",
 "path": "res://servers/Exit.gd"
 }, {
+"base": "Node",
+"class": "Folder",
+"language": "GDScript",
+"path": "res://servers/Folder.gd"
+}, {
+"base": "Reference",
+"class": "FolderManager",
+"language": "GDScript",
+"path": "res://servers/FolderManager.gd"
+}, {
 "base": "Resource",
 "class": "Item",
 "language": "GDScript",
 "path": "res://items/Item.gd"
 }, {
 "base": "PanelContainer",
+"class": "Port",
+"language": "GDScript",
+"path": "res://servers/Port.gd"
+}, {
+"base": "PanelContainer",
 "class": "Server",
 "language": "GDScript",
 "path": "res://servers/Server.gd"
+}, {
+"base": "Node",
+"class": "UserDetail",
+"language": "GDScript",
+"path": "res://User.gd"
 } ]
 _global_script_class_icons={
 "Exit": "",
+"Folder": "",
+"FolderManager": "",
 "Item": "",
-"Server": ""
+"Port": "",
+"Server": "",
+"UserDetail": ""
 }
 
 [application]

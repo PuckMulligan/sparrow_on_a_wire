@@ -9,3 +9,10 @@ func _ready() -> void:
 	
 #	$OutsideServer.add_item(key)
 #	$OutsideServer.connect_exit_locked("north", $LockedServer)
+
+func port_open_or_closed():
+	pass
+	
+func scan_ports():
+	pass
+	
