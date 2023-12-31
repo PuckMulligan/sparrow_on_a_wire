@@ -1,10 +1,10 @@
 extends Node
 
 
-var current_room = null
+var current_server = null
 
-func initialize(starting_room) -> String:
-	return change_room(starting_room)
+func initialize(starting_server) -> String:
+	return change_server(starting_server)
 
 
 func process_command(input: String) -> String:
@@ -28,8 +28,8 @@ func process_command(input: String) -> String:
 func go(second_word: String) -> String:
 	if second_word == "":
 		return "Go Where?"
-	if current_room.exits.keys().has(second_word):
-		var change_response = change_room(current_room.exits[second_word])
+	if current_server.exits.keys().has(second_word):
+		var change_response = change_server(current_server.exits[second_word])
 		return PoolStringArray(["you go %s." % second_word, change_response]).join("\n")
 	else:
 		return "You can't go that way."
@@ -37,11 +37,12 @@ func go(second_word: String) -> String:
 func help() -> String:
 	return "You can use these commands: go [location], help"
 
-func change_room(new_room) -> String:
-	current_room = new_room
-	var exit_string = PoolStringArray(new_room.exits.keys()).join(" ")
+func change_server(new_server) -> String:
+	current_server = new_server
+	var exit_string = PoolStringArray(new_server.exits.keys()).join(" ")
 	var strings = PoolStringArray([
-		"You are now in: " + new_room.room_name + ". It is " +new_room.room_description,
+		"You are now in: " + new_server.server_name + ". It is " +new_server.server_description,
+		"IP: " + new_server.ip,
 		"Exits: " + exit_string
 	]).join("\n")
 	return strings

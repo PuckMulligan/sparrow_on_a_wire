@@ -1,14 +1,27 @@
-[]
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
 
 config_version=4
+
 _global_script_classes=[ {
-"base": "PanelContainer",
-"class": "_Room",
+"base": "Node",
+"class": "FileSystem",
 "language": "GDScript",
-"path": "res://Room.gd"
+"path": "res://FileSystem.gd"
+}, {
+"base": "PanelContainer",
+"class": "Server",
+"language": "GDScript",
+"path": "res://Server.gd"
 } ]
 _global_script_class_icons={
-"_Room": ""
+"FileSystem": "",
+"Server": ""
 }
 
 [application]
@@ -27,7 +40,6 @@ common/enable_pause_aware_picking=true
 
 [rendering]
 
-quality/driver/driver_name="GLES2"
 vram_compression/import_etc=true
 vram_compression/import_etc2=false
 environment/default_environment="res://default_env.tres"

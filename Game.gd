@@ -12,7 +12,7 @@ onready var command_processor = $CommandProcessor
 onready var history_rows = $Background/MarginContainer/Rows/OutputArea/Scroll/HistoryRows
 onready var scroll = $Background/MarginContainer/Rows/OutputArea/Scroll
 onready var scrollbar = scroll.get_v_scrollbar()
-onready var room_manager = $RoomManager
+onready var server_manager = $ServerManager
 
 
 func _ready() -> void:
@@ -21,14 +21,14 @@ func _ready() -> void:
 	
 	create_response("WELCOME TO THE COVEN")
 	
-	print("Number of children in room_manager: ", room_manager.get_child_count())
-	var starting_room = room_manager.get_child(0)
-	print("First child of room_manager: ", starting_room)
+	print("Number of children in server_manager: ", server_manager.get_child_count())
+	var starting_server = server_manager.get_child(0)
+	print("First child of server_manager: ", starting_server)
 	
-	var starting_room_response = command_processor.initialize(starting_room)
-	print("Response from command_processor.initialize: ", starting_room_response)
+	var starting_server_response = command_processor.initialize(starting_server)
+	print("Response from command_processor.initialize: ", starting_server_response)
 	
-	create_response(starting_room_response)
+	create_response(starting_server_response)
 func create_response(response_text):
 	var response = Response.instance()
 	response.text = response_text
