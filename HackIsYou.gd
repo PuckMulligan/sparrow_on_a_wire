@@ -12,7 +12,19 @@ func _ready():
 			column.append(null)
 		grid.append(column)
 		
+
+		
 func _input(event):
 	if event is InputEventKey:
 		if event.pressed:
 			print("A key was pressed")
+
+func _draw():
+	# Draw the grid lines.
+	var color = Color(1, 1, 1, 0.5)  # Semi-transparent white.
+	for i in range(len(grid)):
+		for j in range(len(grid[i])):
+			var start = Vector2(i * grid_size.x, j * grid_size.y)
+			var end = start + grid_size
+			draw_line(start, Vector2(start.x, end.y), color)  # Vertical line.
+			draw_line(start, Vector2(end.x, start.y), color)  # Horizontal line.
