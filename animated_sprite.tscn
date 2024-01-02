@@ -1,0 +1,155 @@
+[gd_scene load_steps=20 format=3 uid="uid://ctsn5x6r5bunp"]
+
+[ext_resource type="Texture2D" uid="uid://cvctlryaf50d1" path="res://RETROcyberpunkAPARTMENTinterior/extra sizes/48x48/no bg/hero1.png" id="1_pt6xk"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_alrbw"]
+atlas = ExtResource("1_pt6xk")
+region = Rect2(0, 0, 96, 96)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_gd6ae"]
+atlas = ExtResource("1_pt6xk")
+region = Rect2(0, 0, 96, 96)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_60jxi"]
+atlas = ExtResource("1_pt6xk")
+region = Rect2(96, 0, 96, 96)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_kws1t"]
+atlas = ExtResource("1_pt6xk")
+region = Rect2(192, 0, 96, 96)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_pmu5w"]
+atlas = ExtResource("1_pt6xk")
+region = Rect2(288, 0, 96, 96)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ebjfr"]
+atlas = ExtResource("1_pt6xk")
+region = Rect2(0, 192, 96, 96)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4aw4i"]
+atlas = ExtResource("1_pt6xk")
+region = Rect2(96, 192, 96, 96)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_q6dkr"]
+atlas = ExtResource("1_pt6xk")
+region = Rect2(192, 192, 96, 96)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4jmtr"]
+atlas = ExtResource("1_pt6xk")
+region = Rect2(288, 192, 96, 96)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_mj80j"]
+atlas = ExtResource("1_pt6xk")
+region = Rect2(0, 96, 96, 96)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_unccg"]
+atlas = ExtResource("1_pt6xk")
+region = Rect2(96, 96, 96, 96)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_eb1ok"]
+atlas = ExtResource("1_pt6xk")
+region = Rect2(192, 96, 96, 96)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qdygc"]
+atlas = ExtResource("1_pt6xk")
+region = Rect2(288, 96, 96, 96)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_fcqs2"]
+atlas = ExtResource("1_pt6xk")
+region = Rect2(0, 288, 96, 96)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_w2yck"]
+atlas = ExtResource("1_pt6xk")
+region = Rect2(96, 288, 96, 96)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_47llg"]
+atlas = ExtResource("1_pt6xk")
+region = Rect2(192, 288, 96, 96)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_exyxa"]
+atlas = ExtResource("1_pt6xk")
+region = Rect2(288, 288, 96, 96)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_qbao6"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_alrbw")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_gd6ae")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_60jxi")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_kws1t")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_pmu5w")
+}],
+"loop": true,
+"name": &"walk_down",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ebjfr")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4aw4i")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_q6dkr")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4jmtr")
+}],
+"loop": true,
+"name": &"walk_left",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_mj80j")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_unccg")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_eb1ok")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_qdygc")
+}],
+"loop": true,
+"name": &"walk_right",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_fcqs2")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_w2yck")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_47llg")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_exyxa")
+}],
+"loop": true,
+"name": &"walk_up",
+"speed": 5.0
+}]
+
+[node name="AnimatedSprite" type="AnimatedSprite2D"]
+sprite_frames = SubResource("SpriteFrames_qbao6")
+animation = &"idle"
+frame_progress = 0.803966
