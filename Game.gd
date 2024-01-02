@@ -9,8 +9,8 @@ export (int) var max_lines_remembered := 30
 var max_scroll_length := 0
 
 onready var command_processor = $CommandProcessor
-onready var history_rows = $Background/MarginContainer/Rows/OutputArea/Scroll/HistoryRows
-onready var scroll = $Background/MarginContainer/Rows/OutputArea/Scroll
+onready var history_rows = $Background/MarginContainer/HBoxContainer/Terminal/MarginContainer/Rows/OutputArea/Scroll/HistoryRows
+onready var scroll = $Background/MarginContainer/HBoxContainer/Terminal/MarginContainer/Rows/OutputArea/Scroll
 onready var scrollbar = scroll.get_v_scrollbar()
 onready var server_manager = $ServerManager
 
