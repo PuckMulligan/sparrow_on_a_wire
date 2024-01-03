@@ -307,7 +307,7 @@ size_flags_horizontal = 3
 size_flags_vertical = 3
 
 [node name="HackIsYou" parent="Control/Background/MarginContainer/HBoxContainer/MiniGame" instance=ExtResource( 10 )]
-position = Vector2( 82, 78 )
+position = Vector2( 253, 210 )
 
 [node name="Terminal" type="PanelContainer" parent="Control/Background/MarginContainer/HBoxContainer"]
 margin_left = 509.0

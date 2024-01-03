@@ -9,24 +9,12 @@
 config_version=4
 
 _global_script_classes=[ {
-"base": "KinematicBody2D",
-"class": "Block",
-"language": "GDScript",
-"path": "res://Block.gd"
-}, {
-"base": "Node",
-"class": "FileSystem",
-"language": "GDScript",
-"path": "res://FileSystem.gd"
-}, {
 "base": "PanelContainer",
 "class": "Server",
 "language": "GDScript",
 "path": "res://Server.gd"
 } ]
 _global_script_class_icons={
-"Block": "",
-"FileSystem": "",
 "Server": ""
 }
 
