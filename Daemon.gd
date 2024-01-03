@@ -21,8 +21,12 @@ func _physics_process(delta):
 	var new_position = global_position + direction * get_parent().grid_size
 	var bodies = get_world_2d().direct_space_state.intersect_point(new_position)
 
-	for body in bodies:
-		if body.collider is Block:
-			body.collider.global_position += direction * get_parent().grid_size
+	if bodies.size() == 0:
+		global_position = new_position
+	elif bodies.size() == 1 and bodies[0].collider is Block and "baba" in get_parent().rules and get_parent().rules["baba"] == "push":
+		var block_new_position = bodies[0].collider.global_position + direction * get_parent().grid_size
+		var block_bodies = get_world_2d().direct_space_state.intersect_point(block_new_position)
 
-	global_position = new_position
+		if block_bodies.size() == 0:
+			bodies[0].collider.global_position = block_new_position
+			global_position = new_position

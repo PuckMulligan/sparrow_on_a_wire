@@ -7,8 +7,25 @@
 [node name="HackIsYou" type="Node2D"]
 script = ExtResource( 3 )
 
-[node name="Block" parent="." instance=ExtResource( 1 )]
-start_position = Vector2( 3, 3 )
-
 [node name="Daemon" parent="." instance=ExtResource( 2 )]
 start_position = Vector2( 2, 3 )
+
+[node name="Is" parent="." instance=ExtResource( 1 )]
+text = "Is"
+start_position = Vector2( 2, 4 )
+
+[node name="User" parent="." instance=ExtResource( 1 )]
+text = "User"
+start_position = Vector2( 2, 5 )
+
+[node name="Network" parent="." instance=ExtResource( 1 )]
+text = "Network"
+start_position = Vector2( 5, 3 )
+
+[node name="Is2" parent="." instance=ExtResource( 1 )]
+text = "Is"
+start_position = Vector2( 5, 4 )
+
+[node name="Connected" parent="." instance=ExtResource( 1 )]
+text = "Connected"
+start_position = Vector2( 5, 5 )
