@@ -9,12 +9,18 @@
 config_version=4
 
 _global_script_classes=[ {
+"base": "Reference",
+"class": "RulesParser",
+"language": "GDScript",
+"path": "res://RulesParser.gd"
+}, {
 "base": "PanelContainer",
 "class": "Server",
 "language": "GDScript",
 "path": "res://Server.gd"
 } ]
 _global_script_class_icons={
+"RulesParser": "",
 "Server": ""
 }
 
