@@ -1,12 +1,13 @@
 [gd_scene load_steps=4 format=2]
 
 [ext_resource path="res://daemon32.png" type="Texture" id=1]
-[ext_resource path="res://Daemon.gd" type="Script" id=2]
+[ext_resource path="res://Player.gd" type="Script" id=2]
 
 [sub_resource type="RectangleShape2D" id=1]
 
-[node name="Daemon" type="KinematicBody2D"]
+[node name="Player" type="KinematicBody2D"]
 script = ExtResource( 2 )
+start_position = null
 
 [node name="Sprite" type="Sprite" parent="."]
 texture = ExtResource( 1 )

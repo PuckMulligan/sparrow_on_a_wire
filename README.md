@@ -13,3 +13,5 @@ To be added in future updates:
 - more puzzle forms
 - more servers
 - 2D overworld
+
+"In sparrow\_on_a\_wire is hacking-puzzle game that makes real hacking techniques accessible and fun. By blending authentic hacking methodology and command-line manipulation with logic-puzzle gameplay, the project offers a unique experience even to those with no prior technical knowledge. The demo includes a single server where players strive to gain access, assume control, execute remote commands, and exfiltrate sensitive data. Additionally, the game boasts a 2D overworld for exploration, interaction with colorful characters, and uncovering new missions and clues."
